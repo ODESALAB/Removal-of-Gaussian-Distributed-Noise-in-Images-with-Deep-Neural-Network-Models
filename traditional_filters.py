@@ -12,8 +12,8 @@ from skimage.morphology import disk
 from scipy.ndimage import gaussian_filter
 
 #Getting the filepaths for train and test data
-train_files=['data2/patches/train/'+filename for filename in os.listdir('data2/patches/train')]
-test_files=['data2/patches/test/'+filename for filename in os.listdir('data2/patches/test')]
+train_files=['data/patches/train/'+filename for filename in os.listdir('data/patches/train')]
+test_files=['data/patches/test/'+filename for filename in os.listdir('data/patches/test')]
 
 BATCH_SIZE=64
 NOISE_LEVELS=[50]
